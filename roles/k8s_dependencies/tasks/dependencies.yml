@@ -32,6 +32,8 @@
     name: kubectl
     state: present
   when: ansible_default_ipv4.address == hostvars['primary1'].ansible_host
-##Whole group {{ hostvars['host_group'].ansible_host }}
-##First entry of group {{ hostvars[groups['host_group'][0]].ansible_host }}
+
+# Notice:
+# Whole group {{ hostvars['host_group'].ansible_host }}
+# First entry of group {{ hostvars[groups['host_group'][0]].ansible_host }}
 ...
