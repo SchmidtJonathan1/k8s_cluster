@@ -1,13 +1,13 @@
 # /site.yml
 ---
-- name: Main YML for k8s cluster configuration
-  hosts: kubernetes
-  become: yes
-  vars_files:
-    - ./group_vars/all.yml
-  roles:
-    - name: k8s configuration
-      role: k8s_dependencies
+#- name: Main YML for k8s cluster configuration
+#  hosts: kubernetes
+#  become: yes
+#  vars_files:
+#    - ./group_vars/all.yml
+#  roles:
+#    - name: k8s configuration
+#      role: k8s_dependencies
 
 - name: Confgiure cluster primary
   hosts: primary
@@ -18,12 +18,12 @@
     - name: Cluster primary
       role: k8s_primary
 
-#- name: Confgiure cluster nodes
-#  hosts: nodes
-#  become: yes
-#  vars_files:
-#    - ./group_vars/all.yml
-#  roles:
-#    - name: Cluster node
-#      role: k8s_node
+- name: Confgiure cluster nodes
+  hosts: nodes
+  become: yes
+  vars_files:
+    - ./group_vars/all.yml
+  roles:
+    - name: Cluster node
+      role: k8s_node
 ...
