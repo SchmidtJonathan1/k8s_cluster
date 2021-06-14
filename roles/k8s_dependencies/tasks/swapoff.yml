@@ -1,0 +1,12 @@
+# /roles/k8s/tasks/dependencies.yml
+---
+# Install dependenciesi
+- name: Turn swap off
+  shell: swapoff -a
+
+- name: Disable SWAP in fstab
+  replace:
+    path: /etc/fstab
+    regexp: '^([^#].*?\sswap\s+sw\s+.*)$'
+    replace: '# \1'
+...

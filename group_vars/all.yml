@@ -1,0 +1,4 @@
+# /group_vars/all.yaml
+### Variable Parameter ###
+
+pod-network: "https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml"
