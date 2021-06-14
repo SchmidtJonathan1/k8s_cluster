@@ -17,3 +17,4 @@ VM system requirements minimum:
 2 CPU (depence on the enviroment)
 
 * Define your kubernetes pod image in group_vars/all.yml
+https://kubernetes.io/docs/concepts/cluster-administration/networking/
