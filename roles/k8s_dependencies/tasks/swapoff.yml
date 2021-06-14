@@ -1,6 +1,6 @@
 # /roles/k8s/tasks/dependencies.yml
 ---
-# Install dependenciesi
+# Turn SWAP off
 - name: Turn swap off
   shell: swapoff -a
 
