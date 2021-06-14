@@ -15,3 +15,5 @@ To run the ansible playbook use:
 VM system requirements minimum:
 2 GB RAM
 2 CPU (depence on the enviroment)
+
+* Define your kubernetes pod image in group_vars/all.yml
