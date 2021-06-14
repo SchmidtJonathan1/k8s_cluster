@@ -3,6 +3,11 @@ Create k8s cluster
 
 To set up a lab enviroment, you need two++ virutal machines (VirtualBox, VMware ...)
 
+VM system requirements minimum:
+2 GB RAM
+2 CPU (depence on the enviroment)
+
+
 To run the ansible playbook use:
 **ansible-playbook -i inventory.ini -K -vv site.yml**
 
